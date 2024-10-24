@@ -1,0 +1,261 @@
+/* Cela permet de réinitialiser les styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Modification de la police d'écriture */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Style de la navigation */
+nav {
+  background-color: #000;
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  margin-left: 250px;
+  margin-top: 10px;
+  border-radius: 30px;
+  width: 75%;
+  height: 50px;
+}
+
+/* Cela sylise uniquement la balise <a> dans la navigation */
+nav a {
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Cela supprime les puces */
+li {
+  list-style-type: none;
+}
+
+/* Lorsqu'on met la souris sur les liens, il y a une animation qui va grossir changer de couleur passant de blanc à rouge */
+nav a:hover {
+  color: #fa8072;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+/* Le texte est centrée */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+}
+
+
+/* Modification du style dans la section vidéo */
+.video {
+  position: relative;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* La vidéo est arrondi de 30px */
+iframe {
+  position: relative;
+  border-radius: 30px;
+  width: 700px;
+  height: 300px;
+}
+
+/* C'est la barre de gauche qui est pivoté de -45 degrés au dessus de la vidéo */
+.hr-left {
+  position: relative;
+  transform: rotate(-45deg);
+  margin-top: 50px;
+  margin-bottom: 2px;
+  margin-left: 49%;
+  width: 150px;
+  background-color: #000;
+}
+
+/* C'est la barre de droite qui est pivoté de 45 degrés au dessus de la vidéo */
+.hr-right {
+  position: relative;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+  margin-left: 43%;
+  width: 150px;
+  background-color: #000;
+}
+
+/* Modification du style dans la section du formulaire */
+.formulaire {
+  background-color: #deb887;
+  text-align: center;
+  border: 3px solid black;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+}
+
+/* Modification du style dans le tableau */
+table {
+  background-color: #c1c9ff;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 1000px;
+  border: 3px solid #000;
+  color: #000;
+  border-spacing: 20px;
+}
+
+th {
+  background-color: #c9aaaa;
+}
+
+td {
+  background-color: #e97878;
+  text-align: center;
+}
+
+tr {
+  width: 20px;
+  height: 50px;
+}
+
+/* Cela permet de bien centrer */
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Modification du bloc où on peut écrire dans le formulaire */
+label {
+  position: relative;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: #fff;
+}
+
+input {
+  height: 25px;
+}
+
+textarea {
+  text-align: center;
+  height: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Bouton d'envoi du formulaire */
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #b2885e;
+  color: #fff;
+  border: #fff;
+  border-radius: 15%;
+}
+
+/* Animation lorsqu'on met la souris sur le bouton d'envoi */
+button:hover {
+  background-color: #79634ec0;
+  transition: 0.5s ease;
+}
+
+/* Modification du fond gris */
+.gray {
+  position: relative;
+  padding-top: 30px;
+  height: 275px;
+  background-color: #dcdcdc;
+}
+
+/* Cela sylise dans les informations du contact (adresse, numéro de téléphone et adresse mail) */
+.info {
+  text-align: center;
+  border-style: solid;
+  border-color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 7%;
+  background-image: linear-gradient(to bottom right, #fa8072, #c1c9ff);
+}
+
+/* Cela sylise uniquement la balise <a> dans le bloc */
+.info a {
+  color: #fff;
+}
+
+/* Pour espacer les blocs de 60px */
+.spacing {
+  padding-top: 60px;
+}
+
+/* Pour espacer le texte dans les informations de 20px */
+.spacing-info {
+  padding-top: 20px;
+}
+
+/* Pour espacer le texte de 20px */
+.spacing-text {
+  padding-top: 20px;
+}
+
+/* Cela sylise les images */
+.images {
+  background-color: #dcdcdc;
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Les images sont arrondis de 15px */
+img {
+  border-radius: 15px;
+}
+
+/* Ajout d'un animation dans les images, lorsqu'on met la souris, les images se grossit */
+img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* Cela sylise le footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Cela sylise uniquement la balise <a> dans le footer */
+footer,
+a {
+  color: #fff;
+  text-decoration: none;
+}

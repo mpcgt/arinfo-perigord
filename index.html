@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cela importe le fichier CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Cela apporte une police de texte qui est Roboto dans Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titre de l'onglet -->
+    <title>Office de tourisme</title>
+  </head>
+  <body>
+    <!-- La navigation -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Accueil</a>
+          <a href="#">Le Périgord</a>
+          <a href="#">Notre gîte</a>
+          <a href="#">Contactez-nous</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Pour espacer le texte de 20px -->
+    <div class="spacing-text"></div>
+
+    <!-- Début de la page -->
+    <h1>Contactez-nous</h1>
+    <h1>Gourmandise et Partage</h1>
+    <!-- Pour espacer le texte de 20px -->
+    <div class="spacing-text"></div>
+    <p>
+      Nous serons très heureux de vous accueillir à
+      <strong>la Ferme Gourmande</strong> afin de vous faire partager l'amour de
+      notre région et de vous faire découvrir toutes nos plus belles
+      spécialités. Vous ne connaissez pas le Périgord Noir?
+      <mark
+        ><strong><i>Réservez vite</i></strong></mark
+      >
+    </p>
+
+    <!-- Pour espacer les blocs de 60px -->
+    <div class="spacing"></div>
+
+    <!-- Intégrer une vidéo YouTube -->
+    <section class="video">
+      <hr class="hr-left" />
+      <hr class="hr-right" />
+      <iframe
+        src="https://www.youtube.com/embed/x7gKf0M8gEI"
+        title="Dordogne Périgord : Découverte de la Vallée de la Dordogne"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Pour espacer les blocs de 60px -->
+    <div class="spacing"></div>
+
+    <!-- Les informations -->
+    <section class="info">
+      <h3>Adresse</h3>
+      <p>10 impasse du Bréil,</p>
+      <p>24260 Le Bugues</p>
+      <!-- Pour espacer le texte entre l'adresse et le téléphone en 20px -->
+      <div class="spacing-info"></div>
+      <h3>Téléphone</h3>
+      <a href="#">07 82 23 78 10</a>
+      <!-- Pour espacer le texte entre l'adresse et le téléphone en 20px -->
+      <div class="spacing-info"></div>
+      <h3>Notre Email</h3>
+      <a href="mailto:contact@lafermegourmande.com"
+        >contact@lafermegourmande.com</a
+      >
+    </section>
+
+    <!-- Pour espacer les blocs de 60px -->
+    <div class="spacing"></div>
+
+    <!-- Un tableau avec les horaires -->
+    <section class="gray">
+      <h2>Nos horaires</h2>
+      <div class="spacing-text"></div>
+      <table class="center">
+        <tr>
+          <th>Jours</th>
+          <th>Lundi</th>
+          <th>Mardi au Jeudi</th>
+          <th>Vendredi au Dimanche</th>
+        </tr>
+
+        <tr>
+          <th>Horaires</th>
+          <td>Fermé</td>
+          <td>8h à 19h</td>
+          <td>8h à 20h</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Pour espacer les blocs de 60px -->
+    <div class="spacing"></div>
+
+    <!-- Un formulaire de contact -->
+    <div class="formulaire">
+      <h1><u>Contactez-nous</u></h1>
+      <div class="spacing-text"></div>
+      <form action="#" method="post">
+        <label id="name">Nom & Prénom</label>
+        <input type="text" placeholder="&nbsp;&nbsp;Nom Prénom" />
+        <label id="email">Email</label>
+        <input type="email" placeholder="&nbsp;&nbsp;Email" />
+        <label id="tel">Téléphone</label>
+        <input type="text" placeholder="&nbsp;&nbsp;Téléphone" />
+        <label id="message">Message</label>
+        <textarea
+          name="message"
+          placeholder="&nbsp;&nbsp;Ecrivez votre message..."
+        ></textarea>
+        <div class="spacing-text"></div>
+        <button type="submit" name="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Pour espacer les blocs de 60px -->
+    <div class="spacing"></div>
+
+    <!-- Les images de présentation avec un animation -->
+    <section class="images">
+      <h3>C'est trop beau le Périgord noir</h3>
+      <div class="spacing-text"></div>
+      <img src="img/dordogne.jpg" alt="Dordogne" width="325" height="175" />
+      <img src="img/hotel-sarlat.jpg" alt="Sarlat" width="325" height="175" />
+      <img
+        src="img/perigord-noir.jpg"
+        alt="Périgord"
+        width="325"
+        height="175"
+      />
+    </section>
+
+    <!-- Le footer -->
+    <footer>
+      <h4>© 2019 - <a href="#">Office du tourisme du Périgord</a></h4>
+    </footer>
+  </body>
+</html>
